@@ -17,6 +17,7 @@ Example of creating a search box by grouping a standard input with a search butt
 import { Input } from 'antd';
 
 const { Search } = Input;
+// You can use Input.Search if you don't declare Search
 
 ReactDOM.render(
   <div>
@@ -27,7 +28,10 @@ ReactDOM.render(
     />
     <br />
     <br />
-    <Search placeholder="input search text" onSearch={value => console.log(value)} enterButton />
+    <Search 
+      placeholder="input search text" 
+      onSearch={value => console.log(value)} 
+      enterButton />
     <br />
     <br />
     <Search
